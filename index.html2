@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ola amor te amo </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #dbb6ee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+        h1 { color: #fff0ff; font-size: 2.5rem; }
+        .botones { margin-top: 20px; position: relative; width: 100%; height: 100px; }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        #btnSi { background-color: #4caf50; color: white; margin-right: 20px; }
+        #btnNo { background-color: #f44336; color: white; position: absolute; }
+    </style>
+</head>
+<body>
 
+    <h1>amor tú me amas ono meamas?? </h1>
+    
+    <div class="botones">
+        <button id="btnSi" onclick="aceptar()">si mi sixsevensito >.o</button>
+        <button id="btnNo" onmouseover="moverBoton()" onclick="moverBoton()">No wei</button>
+    </div>
+
+    <script>
+        function aceptar() {
+            alert("yo mucho más amor, muamua");
+        }
+
+        function moverBoton() {
+            const btnNo = document.getElementById('btnNo');
+            // Mueve el botón de forma aleatoria por la pantalla para que no lo atrape
+            const x = Math.random() * (window.innerWidth - btnNo.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btnNo.offsetHeight);
+            
+            btnNo.style.left = x + 'px';
+            btnNo.style.top = y + 'px';
+        }
+    </script>
+
+</body>
+</html>
