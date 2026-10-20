@@ -32,3 +32,28 @@
     </style>
 </head>
 <body>
+
+    <h1>amor tú me amas ono meamas??</h1>
+    
+    <div class="botones">
+        <button id="btnSi" onclick="aceptar()">si mi sixsevensito >.o</button>
+        <button id="btnNo" onmouseover="moverBoton()" onclick="moverBoton()">No 😢</button>
+    </div>
+
+    <script>
+        function aceptar() {
+            alert("¡Sabiiaaa que dirías que sí! Te amo muchísimo. 🥰❤️");
+        }
+
+        function moverBoton() {
+            const btnNo = document.getElementById('btnNo');
+            const x = Math.random() * (window.innerWidth - btnNo.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btnNo.offsetHeight);
+            
+            btnNo.style.left = x + 'px';
+            btnNo.style.top = y + 'px';
+        }
+    </script>
+
+</body>
+</html>
